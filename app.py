@@ -12,8 +12,8 @@ from gradio_imageslider import ImageSlider
 from depth_anything.dpt import DepthAnything
 from depth_anything.util.transform import Resize, NormalizeImage, PrepareForNet
 from openxlab.model import download
-download(model_repo='mzlx/testmodel', 
-        model_name=['pytorch_model.bin', 'config.json'], output='model/')
+# download(model_repo='mzlx/testmodel', 
+#         model_name=['pytorch_model.bin', 'config.json'], output='model/')
 
 css = """
 #img-display-container {
@@ -27,7 +27,7 @@ css = """
     }
 """
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-model = model = DepthAnything.from_pretrained('model', local_files_only=True).to(DEVICE).eval()
+model = model = DepthAnything.from_pretrained('mzlx/testmodel', local_files_only=True).to(DEVICE).eval()
 
 title = "# Depth Anything"
 description = """Official demo for **Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data**.
