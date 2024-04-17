@@ -1,3 +1,11 @@
 numpy                             # 默认（存在不替换，不存在安装最新版）
 numpy==1.19.5                     # 指定版本 (最日常的写法)
 numpy>=1.19.2                     # 大于某个版本
+requests
+torch
+torchvision
+gradio_imageslider
+gradio==4.14.0
+opencv-python
+huggingface_hub
+openxlab
