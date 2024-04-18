@@ -4,4 +4,4 @@ sentencepiece
 einops
 accelerate
 tiktoken
-min
+mim
