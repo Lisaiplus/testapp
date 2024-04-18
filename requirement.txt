@@ -1,6 +1,6 @@
 gradio==4.10.0
 transformers
-sentencepiece
+sentencepiece==0.1.99
 einops
 accelerate
 tiktoken
